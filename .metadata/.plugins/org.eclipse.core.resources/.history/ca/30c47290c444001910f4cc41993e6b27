@@ -1,0 +1,15 @@
+package lab02;
+/** A class that represents a path via pursuit curves. */
+public class Path {
+
+    // TODO
+	public Point curr;
+	public Point next;
+	
+	public Path (int x , int y) {
+		curr.x = x;
+		curr.y = y;
+ 	}
+	
+
+}

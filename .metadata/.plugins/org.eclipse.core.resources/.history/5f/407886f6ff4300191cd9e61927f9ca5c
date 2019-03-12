@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class leapyear {
+
+    /** Calls isLeapYear to print correct statement. */
+	private static boolean isLeapYear(int year1) {
+		if ((year1%4==0)&&(year1%100!=0)||year1%400==0) {return true;}
+		else return false;
+	}
+    private static void checkLeapYear(int year) {
+        if (isLeapYear(year)) {
+            System.out.printf("%d is a leap year.\n", year);
+        } else {
+            System.out.printf("%d is not a leap year.\n", year);
+        }
+    }
+
+    /** Must be provided an integer as a command line argument ARGS. */
+    public static void main(String[] args) {
+    	whlie(ture){
+    	Scanner s = new Scanner (System.in);
+    	int year = s.nextInt();
+    	
+        
+            try {
+                checkLeapYear(year);
+            } catch (NumberFormatException e) {
+                System.out.printf("%s is not a valid number.\n", year);
+            }
+        }
+        
+}
+}
